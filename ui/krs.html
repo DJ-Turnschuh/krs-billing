@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="krs.css">
+  <title>𝗞𝗥𝗦® │Development</title>
+</head>
+
+<body class="sfondo">
+  <!-- Contenitore principale -->
+  <div class="container">
+    <!-- Sezione del bottone "Annulla" -->
+    <div class="bottoneannulla">
+      <button class="annulla" id="annullare" onclick="annulla()">Chiudi</button>
+      <div class="annulla-testo"></div>
+    </div>
+
+    <!-- Sezione del bottone "Invia" -->
+    <div class="bottoneinvia">
+      <button class="invia" id="inviare" onclick="invia()">Invia</button>
+      <div class="invia-testo"></div>
+    </div>
+
+    <!-- Sezione per l'inserimento dell'ID del giocatore e l'importo del trasferimento -->
+    <div class="trasfe-testo">
+      <input type="number" class="trasfe-controllo1" id="trasfe1" placeholder="ID Player" min="1"
+        style="text-align: center;">
+      <input type="number" class="trasfe-controllo2" id="trasfe2" placeholder="Transfer Billing $" min="1"
+        style="text-align: center;">
+    </div>
+  </div>
+
+  <!-- Sezione del titolo -->
+  <div class="titolo">
+    <h1>KRS BILLING</h1>
+  </div>
+
+  <!-- Sezione dell'immagine del logo -->
+  <div class="image">
+    <img src="https://cdn.discordapp.com/attachments/1052910824865402892/1109634456345653299/Krs-logo.png" alt=""
+      id="image-src" />
+  </div>
+
+  <!-- Modal per confermare il pagamento -->
+  <div id="pay-modal" class="modal">
+    <div class="modal-content">
+      <h2>Conferma il Pagamento</h2>
+      <p>Paga la fattura!</p>
+      <button class="paga" onclick="effettuaPagamento()">Paga</button>
+    </div>
+  </div>
+
+  <script src="krs.js"></script>
+</body>
+
+</html>
+
+

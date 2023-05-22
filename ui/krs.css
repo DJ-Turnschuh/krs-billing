@@ -1,0 +1,221 @@
+.sfondo {
+  position: absolute;
+  background-color: #252525bd;
+  display: none;
+}
+
+.image {
+  display: none;
+  margin-top: 20%;
+  margin-left: 40.6%;
+  width: 17%;
+  height: auto;
+  border: 1px solid #e0e0e0d8;
+  border-radius: 1px;
+}
+
+.image > img {
+  height: 60%;
+  width: 60%;
+  margin-left: 20.7%;
+  object-fit: cover;
+}
+
+.container {
+  display: none;
+  position: absolute;
+  background: linear-gradient(-10deg, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.87) 80%);
+  border: 1px rgba(54, 54, 54, 0.555) solid;
+  border-radius: 1px;
+  width: 500px;
+  height: 700px;
+  left: 680px; /* posizione centrale 650px */
+  right: 0;
+  margin-top: 130px;
+}
+
+* {
+  transition: all 0.4s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.h1 {
+  font-size: 12px;
+}
+
+h1 {
+  margin-left: 240px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 5px 5px rgba(255, 255, 255, 0.808));
+}
+
+
+
+/* Box Pagamento */
+.modal-content {
+  display: block;
+  position: absolute;
+  background-color: #3f3f3fde;
+  border: 1px rgb(238, 238, 238) solid;
+  width: 250px;
+  height: 40%;
+  margin-left: -1.0px;
+  margin-top: 400px;
+  color: white;
+  font-size: 80.2%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  background-color: #3f3f3f00;
+  width: 250px;
+  height: 40%;
+  margin-left: 811px;
+  color: white;
+  font-size: 80.2%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.paga {
+  background-color: #00ff95;
+  box-shadow: 1px 1px 5px 1px rgb(0, 192, 112);
+  color: white;
+  border: 1px rgba(255, 255, 255, 0) solid;
+  border-radius: 10px;
+  width: 80px;
+  height: 35px;
+  margin-top: 50px;
+  margin-left: -2.0%;
+}
+
+
+
+
+.annulla {
+  position: absolute;
+  margin-left: 500px;
+  color: #000000;
+  padding: 0.3em 0.7em;
+  font-size: 18px;
+ 
+  border-radius: 0.5em;
+  background: #e0e0e0;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+             width: 80px;
+             height: 35px;
+             left: -470px;
+             margin-top: 620px;
+}
+
+annulla:hover {
+  border: 1px solid white;
+}
+
+annulla:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #ffffff;
+}
+
+.annulla-testo {
+  width: 180px;
+  height: 120px;
+  border-radius: 1px;
+  margin-top: -3px;
+  margin-left: 3px;
+}
+
+
+
+.invia {
+  position: absolute;
+  margin-left: 500px;
+  color: #090909;
+  padding: 0.3em 0.7em;
+  font-size: 18px;
+ 
+  border-radius: 0.5em;
+  background: #e0e0e0;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+             width: 80px;
+             height: 37px;
+             left: -110px;
+             margin-top: 620px;
+}
+
+invia:hover {
+  border: 1px solid white;
+}
+
+invia:active {
+  box-shadow: 4px 4px 12px #c5c5c5,
+             -4px -4px 12px #ffffff;
+}
+
+/* Icona */
+.invia-testo {
+  width: 180px;
+  height: 120px;
+  border-radius: 1px;
+  margin-top: -120px;
+  margin-left: 170px;
+  text-align: center;
+}
+
+
+
+/* Testo */
+.trasfe-testo {
+  width: 180px;
+  height: 120px;
+  border-radius: 1px;
+  margin-top: -120px;
+  margin-left: 180px;
+}
+
+.trasfe-controllo1,
+.trasfe-controllo2 {
+  outline: none;
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 127px;
+  margin-left: -130px;
+  color: rgb(48, 48, 48);
+  background-color: #d8d8d8de;
+  outline-color: rgb(48, 48, 48);
+  border-color: rgba(197, 197, 197, 0);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+.trasfe-controllo2 {
+  margin-top: 30px;
+}
+
+.titolo {
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 590px;
+}
+
+::-webkit-inner-spin-button,
+input[type="number"] ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
