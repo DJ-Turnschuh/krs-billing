@@ -76,22 +76,6 @@ function effettuaPagamento() {
 	// document.querySelector(".modal").style.display = "none";
 }
 
-// Funzione non consentita per inviare la fattura a te stesso
-function confermaPagamento() {
-	const destinatario = document.querySelector("#trasfe1").value;
-	const importo = document.querySelector("#trasfe2").value;
-
-	// Verifica se il destinatario è uguale all'id del mittente
-	if (destinatario === document.querySelector("#trasfe1").value) {
-		// Il destinatario è lo stesso del mittente, mostra un messaggio di errore o gestisci il caso appropriatamente
-		alert("Non puoi fare la fattura a te stesso.");
-		throw new Error("Fatturazione a se stesso non consentita.");
-	}
-
-	document.querySelector(".modal").style.display = "block";
-	document.querySelector(".sfondo").style.display = "block";
-	document.querySelector(".modal-content").style.display = "block";
-}
 
 
 // Funzione di chiusura della Nui
