@@ -3,9 +3,8 @@ game 'gta5'
 lua54 'yes'
 
 Name 'krs-billing'
-Author '𝗞𝗥𝗦®'
+Author 'Karos#7804'
 version "1.0.0"
-
 Discord 'https://discord.gg/wM4XDaXfU8' -- 𝗞𝗥𝗦® --
 
 

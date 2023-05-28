@@ -14,13 +14,13 @@
   <div class="container">
     <!-- Sezione del bottone "Annulla" -->
     <div class="bottoneannulla">
-      <button class="annulla" id="annullare" onclick="annulla()">Chiudi</button>
+      <button class="annulla" id="annullare" onclick="annulla()">Close</button>
       <div class="annulla-testo"></div>
     </div>
 
     <!-- Sezione del bottone "Invia" -->
     <div class="bottoneinvia">
-      <button class="invia" id="inviare" onclick="invia()">Invia</button>
+      <button class="invia" id="inviare" onclick="invia()">Send</button>
       <div class="invia-testo"></div>
     </div>
 
@@ -28,7 +28,7 @@
     <div class="trasfe-testo">
       <input type="number" class="trasfe-controllo1" id="trasfe1" placeholder="ID Player" min="1"
         style="text-align: center;">
-      <input type="number" class="trasfe-controllo2" id="trasfe2" placeholder="Transfer Billing $" min="1"
+      <input type="number" class="trasfe-controllo2" id="trasfe2" placeholder="Ammount Billing $" min="1"
         style="text-align: center;">
     </div>
   </div>
@@ -47,8 +47,8 @@
   <!-- Modal per confermare il pagamento -->
   <div id="pay-modal" class="modal">
     <div class="modal-content">
-      <h2>Conferma il Pagamento</h2>
-      <p>Paga la fattura!</p>
+      <h2>Confirm Payment</h2>
+      <p>Pay the bill!</p>
       <button class="paga" onclick="effettuaPagamento()">Paga</button>
     </div>
   </div>

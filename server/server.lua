@@ -37,18 +37,25 @@ RegisterNetEvent('inviare:fattura', function(destinatario, importo)
 end)
 
 
+
 RegisterNetEvent('effettuare:paga', function()
     local destinatario = d
     local importo = i
     local source = s
-    local xPlayer = ESX.GetPlayerFromId(destinatario)
-
-    local sContanti = xPlayer.getAccount("money").money
+    local xTarget = ESX.GetPlayerFromId(destinatario)
+    local xPlayer = ESX.GetPlayerFromId(source)
+    local society = xPlayer.getJob().name
+    local sContanti = xTarget.getAccount("money").money
+    print(xPlayer.source)
+    print(xTarget.source)
     if sContanti >= importo then
-        xPlayer.removeMoney(importo)
-        xPlayer.addAccountMoney(source, importo)
+        TriggerEvent('esx_addonaccount:getSharedAccount', "society_" .. society, function(account)
+            account.addMoney(importo)
+        end)
+        xTarget.removeMoney(importo)
+       -- xTarget.addAccountMoney(source, importo)
     else
-        xPlayer.showNotification("Non hai abbastanza soldi")
+        xTarget.showNotification("Non hai abbastanza soldi")
     end
 end)
 

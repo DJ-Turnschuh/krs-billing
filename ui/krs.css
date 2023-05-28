@@ -1,6 +1,6 @@
 .sfondo {
   position: absolute;
-  background-color: #252525bd;
+  background-color: #2525253f;
   display: none;
 }
 
@@ -10,7 +10,7 @@
   margin-left: 40.6%;
   width: 17%;
   height: auto;
-  border: 1px solid #e0e0e0d8;
+  border: 1px solid #fffffff8;
   border-radius: 1px;
 }
 
@@ -25,7 +25,8 @@
   display: none;
   position: absolute;
   background: linear-gradient(-10deg, rgba(255, 255, 255, 0.77) 0%, rgba(255, 255, 255, 0.87) 80%);
-  border: 1px rgba(54, 54, 54, 0.555) solid;
+  filter: drop-shadow(0 5px 5px rgba(70, 70, 70, 0.808));
+  border: 1px rgba(54, 54, 54, 0) solid;
   border-radius: 1px;
   width: 500px;
   height: 700px;
